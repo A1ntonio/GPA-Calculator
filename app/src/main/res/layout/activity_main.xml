@@ -1,0 +1,696 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+    <RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".MainActivity">
+
+        <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:layout_marginStart="0dp"
+                android:layout_marginTop="0dp"
+                android:layout_marginEnd="0dp"
+                android:layout_marginBottom="0dp"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:background="@drawable/border"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/co0row"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginTop="5dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/co0"
+                        android:layout_width="161dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:ems="10"
+                        android:text="@string/courses_title"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="18sp" />
+
+                    <TextView
+                        android:id="@+id/hr0"
+                        android:layout_width="109dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:ems="10"
+                        android:text="@string/c_hours"
+                        android:textAlignment="center"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="18sp" />
+
+                    <TextView
+                        android:id="@+id/gr0"
+                        android:layout_width="101dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:text="@string/grades"
+                        android:textAlignment="center"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="18sp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/co1row"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <EditText
+                        android:id="@+id/co1"
+                        android:layout_width="136dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:ems="10"
+                        android:hint="@string/course_1"
+                        android:inputType="textPersonName"/>
+
+                    <EditText
+                        android:id="@+id/hr1"
+                        android:layout_width="78dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:ems="10"
+                        android:inputType="number"
+                        android:hint="@string/num2_5" />
+
+                    <Spinner
+                        android:id="@+id/gr1"
+                        android:layout_width="70dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/co2row"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <EditText
+                        android:id="@+id/co2"
+                        android:layout_width="136dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:ems="10"
+                        android:hint="@string/course_2"
+                        android:inputType="textPersonName" />
+
+                    <EditText
+                        android:id="@+id/hr2"
+                        android:layout_width="78dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:ems="10"
+                        android:inputType="number"
+                        android:hint="@string/num3_5" />
+
+                    <Spinner
+                        android:id="@+id/gr2"
+                        android:layout_width="70dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/co3row"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <EditText
+                        android:id="@+id/co3"
+                        android:layout_width="136dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:ems="10"
+                        android:hint="@string/course_3"
+                        android:inputType="textPersonName" />
+
+                    <EditText
+                        android:id="@+id/hr3"
+                        android:layout_width="78dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:ems="10"
+                        android:inputType="number"
+                        android:hint="@string/num4_5" />
+
+                    <Spinner
+                        android:id="@+id/gr3"
+                        android:layout_width="70dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/co4row"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <EditText
+                        android:id="@+id/co4"
+                        android:layout_width="136dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:ems="10"
+                        android:hint="@string/course_4"
+                        android:inputType="textPersonName" />
+
+                    <EditText
+                        android:id="@+id/hr4"
+                        android:layout_width="78dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:ems="10"
+                        android:inputType="number"
+                        android:hint="@string/num5_5" />
+
+                    <Spinner
+                        android:id="@+id/gr4"
+                        android:layout_width="70dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/co5row"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <EditText
+                        android:id="@+id/co5"
+                        android:layout_width="136dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:ems="10"
+                        android:hint="@string/course_5"
+                        android:inputType="textPersonName" />
+
+                    <EditText
+                        android:id="@+id/hr5"
+                        android:layout_width="78dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:ems="10"
+                        android:inputType="number"
+                        android:hint="@string/num_5" />
+
+                    <Spinner
+                        android:id="@+id/gr5"
+                        android:layout_width="70dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/co6row"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:visibility="gone"
+                    android:orientation="horizontal">
+                    <EditText
+                        android:id="@+id/co6"
+                        android:layout_width="136dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:ems="10"
+                        android:inputType="textPersonName"
+                        android:hint="@string/course_6" />
+
+                    <EditText
+                        android:id="@+id/hr6"
+                        android:layout_width="78dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:ems="10"
+                        android:inputType="number"
+                        android:text="@string/zero1" />
+
+                    <Spinner
+                        android:id="@+id/gr6"
+                        android:layout_width="70dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/co7row"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:visibility="gone"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:orientation="horizontal">
+                    <EditText
+                        android:id="@+id/co7"
+                        android:layout_width="136dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:ems="10"
+                        android:inputType="textPersonName"
+                        android:hint="@string/course_7" />
+
+                    <EditText
+                        android:id="@+id/hr7"
+                        android:layout_width="78dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:ems="10"
+                        android:inputType="number"
+                        android:text="@string/zero2" />
+
+                    <Spinner
+                        android:id="@+id/gr7"
+                        android:layout_width="70dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/co8row"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:visibility="gone"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:orientation="horizontal">
+                    <EditText
+                        android:id="@+id/co8"
+                        android:layout_width="136dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:ems="10"
+                        android:inputType="textPersonName"
+                        android:hint="@string/course_8" />
+
+                    <EditText
+                        android:id="@+id/hr8"
+                        android:layout_width="78dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:ems="10"
+                        android:inputType="number"
+                        android:text="@string/zero3" />
+
+                    <Spinner
+                        android:id="@+id/gr8"
+                        android:layout_width="70dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/co9row"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:visibility="gone"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:orientation="horizontal">
+                    <EditText
+                        android:id="@+id/co9"
+                        android:layout_width="136dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:ems="10"
+                        android:inputType="textPersonName"
+                        android:hint="@string/course_9" />
+
+                    <EditText
+                        android:id="@+id/hr9"
+                        android:layout_width="78dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:ems="10"
+                        android:inputType="number"
+                        android:text="@string/zero4" />
+
+                    <Spinner
+                        android:id="@+id/gr9"
+                        android:layout_width="70dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/clearbutton"
+                        android:layout_width="0dp"
+                        android:layout_height="35dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_weight="1"
+                        android:paddingLeft="5dp"
+                        android:background="@drawable/button_style"
+                        android:drawableStart="@android:drawable/ic_notification_clear_all"
+                        android:drawablePadding="-30dp"
+                        android:text="@string/cleare"
+                        android:textColor="#fff" />
+
+                    <Button
+                        android:id="@+id/addcobutton"
+                        android:layout_width="0dp"
+                        android:layout_height="35dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/button_style"
+                        android:drawableStart="@android:drawable/ic_menu_add"
+                        android:drawablePadding="-15dp"
+                        android:text="@string/add_course"
+                        android:textColor="#fff" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/calcubutton"
+                        android:layout_width="0dp"
+                        android:layout_height="40dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginLeft="60dp"
+                        android:layout_marginRight="60dp"
+                        android:background="@drawable/button_style"
+                        android:layout_weight="1"
+                        android:textColor="#fff"
+                        android:text="@string/calculate" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/resultfocuse"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:orientation="horizontal">
+
+
+                    <TextView
+                        android:id="@+id/textView"
+                        android:layout_width="124dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="top|bottom|left"
+                        android:text="@string/semester_hrs"
+                        android:textSize="18sp" />
+
+                    <EditText
+                        android:id="@+id/semhrresult"
+                        android:layout_width="114dp"
+                        android:layout_height="35dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/border"
+                        android:ems="10"
+                        android:hint="@string/semhrs"
+                        android:paddingLeft="5dp"
+                        android:inputType="numberDecimal" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="5dp"
+                    android:orientation="horizontal">
+
+
+                    <TextView
+                        android:id="@+id/textView3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="top|bottom|left"
+                        android:text="@string/semester_cps"
+                        android:textSize="18sp" />
+
+                    <EditText
+                        android:id="@+id/semcpresult"
+                        android:layout_width="105dp"
+                        android:layout_height="35dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/border"
+                        android:ems="10"
+                        android:hint="@string/semcps"
+                        android:paddingLeft="5dp"
+                        android:inputType="numberDecimal" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:orientation="horizontal">
+
+
+                    <TextView
+                        android:id="@+id/textView2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="top|bottom"
+                        android:text="@string/semester_gpa"
+                        android:textSize="18sp" />
+
+                    <TextView
+                        android:id="@+id/semgparesult"
+                        android:layout_width="109dp"
+                        android:layout_height="35dp"
+                        android:layout_weight="1"
+                        android:textSize="18sp"
+                        android:gravity="center|start"
+                        android:ems="10"
+                        android:hint="@string/semgps"
+                        android:paddingLeft="5dp"
+                        android:background="@drawable/border" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginBottom="20dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/colorPrimary"
+                        android:textAlignment="center"
+                        android:text="@string/usetheabove"/>
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:id="@+id/resultcol2hr"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:orientation="horizontal">
+
+
+                    <TextView
+                        android:id="@+id/textView12"
+                        android:layout_width="wrap_content"
+                        android:layout_height="50dp"
+                        android:layout_weight="1"
+                        android:text="@string/curenttotalhr"
+                        android:textSize="18sp" />
+
+                    <EditText
+                        android:id="@+id/sem2hrresult"
+                        android:layout_width="109dp"
+                        android:layout_height="35dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/border"
+                        android:ems="10"
+                        android:paddingLeft="5dp"
+                        android:inputType="numberDecimal" />
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/resultcol2cp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:orientation="horizontal">
+
+
+                    <TextView
+                        android:id="@+id/textView13"
+                        android:layout_width="109dp"
+                        android:layout_height="50dp"
+                        android:layout_weight="1"
+                        android:text="@string/current_total_cps"
+                        android:textSize="18sp" />
+
+                    <EditText
+                        android:id="@+id/sem2cpresult"
+                        android:layout_width="90dp"
+                        android:layout_height="35dp"
+                        android:background="@drawable/border"
+                        android:layout_weight="1"
+                        android:ems="10"
+                        android:paddingStart="5dp"
+                        android:paddingEnd="5dp"
+                        android:inputType="numberDecimal" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginBottom="20dp"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/calcgpa"
+                        android:layout_width="0dp"
+                        android:layout_marginLeft="60dp"
+                        android:layout_marginRight="60dp"
+                        android:layout_height="40dp"
+                        android:background="@drawable/button_style"
+                        android:textColor="#fff"
+                        android:layout_weight="1"
+                        android:text="@string/calculate_cgpa" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:background="@drawable/border"
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:orientation="horizontal">
+
+
+                    <TextView
+                        android:id="@+id/total1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="top|bottom|start"
+                        android:text="@string/total_hrs"
+                        android:textSize="18sp" />
+
+                    <TextView
+                        android:id="@+id/totalhrresult"
+                        android:layout_width="3dp"
+                        android:layout_height="wrap_content"
+                        android:gravity="top|bottom"
+                        android:textSize="18sp"
+                        android:text="@string/totalresult1"
+                        android:layout_weight="1" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:background="@drawable/border"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:orientation="horizontal">
+
+
+                    <TextView
+                        android:id="@+id/total2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="top|bottom|start"
+                        android:text="@string/total_cps2"
+                        android:textSize="18sp" />
+
+                    <TextView
+                        android:id="@+id/totalcpresult"
+                        android:layout_width="3dp"
+                        android:layout_height="wrap_content"
+                        android:gravity="top|bottom"
+                        android:textSize="18sp"
+                        android:text="@string/totalresult2"
+                        android:layout_weight="1" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:layout_marginBottom="40dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:background="@drawable/border"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal">
+
+
+                    <TextView
+                        android:id="@+id/total3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="top|bottom"
+                        android:text="@string/cummulative_gpa"
+                        android:textSize="18sp" />
+
+                    <TextView
+                        android:id="@+id/cumgparesult"
+                        android:layout_width="73dp"
+                        android:layout_height="wrap_content"
+                        android:gravity="top|bottom"
+                        android:textSize="18sp"
+                        android:textColor="#FF042754"
+                        android:text="@string/totalresult3"
+                        android:layout_weight="1" />
+                </LinearLayout>
+            </LinearLayout>
+
+        </ScrollView>
+
+
+</RelativeLayout>
